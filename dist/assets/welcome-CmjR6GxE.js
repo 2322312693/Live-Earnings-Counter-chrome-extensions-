@@ -1,0 +1,1 @@
+import{o as n,c as a,a as r,b as _}from"./index-xmc9uE97.js";const p=(t,e)=>{const c=t.__vccOpts||t;for(const[o,s]of e)c[o]=s;return c},l={},d={class:"h-96 w-96"},h=r("h1",{class:"text-3xl text-center"},"welocome Page",-1),i=[h];function m(t,e){return n(),a("div",d,i)}const f=p(l,[["render",m]]),u=_(f);u.mount("#popup_html");
