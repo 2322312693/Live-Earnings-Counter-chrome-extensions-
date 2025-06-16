@@ -1,4 +1,3 @@
-
 // 添加初始化标记
 let isInitialized = false;
 
@@ -39,7 +38,7 @@ function createSalaryDisplay() {
     font-size: 10px;
     line-height: 1;
   `;
-  salary.textContent = '¥0.00';
+  salary.textContent = '0.00';
   container.appendChild(salary);
 
   // 添加一个小图标表示工作状态
@@ -92,7 +91,6 @@ function createSalaryDisplay() {
 
 // 更新薪资显示
 function updateSalaryDisplay(data) {
-  
   let container = document.getElementById('salary-tracker-container');
   
   if (!container) {
@@ -113,26 +111,24 @@ function updateSalaryDisplay(data) {
             displayValue = '****';
             break;
           case 'percent':
-            // 计算工作日的百分比
             const workStartMinutes = data.workStartTime ? getMinutesFromTimeString(data.workStartTime) : 9 * 60;
             const workEndMinutes = data.workEndTime ? getMinutesFromTimeString(data.workEndTime) : 18 * 60;
             const totalMinutes = workEndMinutes - workStartMinutes;
-            // 使用原始分钟数而不是格式化后的字符串
             const workMinutes = typeof data.currentWorkMinutes === 'string' ? 
-              data.currentWorkMinutes : // 已经是格式化后的字符串
-              (data.currentWorkMinutes / 60) * 60; // 转换为分钟
+              data.currentWorkMinutes : 
+              (data.currentWorkMinutes / 60) * 60;
             const percent = Math.min(100, Math.round((workMinutes / totalMinutes) * 100));
             displayValue = `${percent}%`;
             break;
           case 'progress':
             const workStartMins = data.workStartTime ? getMinutesFromTimeString(data.workStartTime) : 9 * 60;
             const workEndMins = data.workEndTime ? getMinutesFromTimeString(data.workEndTime) : 18 * 60;
-            // 使用原始分钟数而不是格式化后的字符串
             const workMins = typeof data.currentWorkMinutes === 'string' ? 
-              data.currentWorkMinutes : // 已经是格式化后的字符串
-              (data.currentWorkMinutes / 60) * 60; // 转换为分钟
+              data.currentWorkMinutes : 
+              (data.currentWorkMinutes / 60) * 60;
             const progress = Math.min(10, Math.floor((workMins / (workEndMins - workStartMins)) * 10));
-            displayValue = '▮'.repeat(progress) + '▯'.repeat(10 - progress);
+            displayValue = chrome.i18n.getMessage('content_progress_full').repeat(progress) + 
+                          chrome.i18n.getMessage('content_progress_empty').repeat(10 - progress);
             break;
           default:
             displayValue = '****';
@@ -145,20 +141,23 @@ function updateSalaryDisplay(data) {
       salaryValue.style.color = '#3B82F6';
       statusDot.style.background = '#22C55E';
       
-      // 更新提示信息 - 直接使用后台发来的格式化工作时间
-      let tooltipContent = `已工作: ${data.currentWorkMinutes}<br>`;
+      // 更新提示信息
+      let tooltipContent = chrome.i18n.getMessage('content_tooltip_worked', [data.currentWorkMinutes]) + '<br>';
       
       if (!data.hideActualAmount) {
-        tooltipContent += `时薪: ${data.currencyUnit || '¥'}${data.hourlyRate.toFixed(2)}<br>`;
+        tooltipContent += chrome.i18n.getMessage('content_tooltip_hourly_rate', [
+          data.currencyUnit || '¥',
+          data.hourlyRate.toFixed(2)
+        ]) + '<br>';
       }
       
-      tooltipContent += `本月工作日: ${data.workDaysInMonth}天`;
+      tooltipContent += chrome.i18n.getMessage('content_tooltip_work_days', [data.workDaysInMonth]);
       tooltip.innerHTML = tooltipContent;
     } else {
-      salaryValue.textContent = '休';
+      salaryValue.textContent = chrome.i18n.getMessage('content_salary_rest');
       salaryValue.style.color = '#9CA3AF';
       statusDot.style.background = '#9CA3AF';
-      tooltip.innerHTML = '非工作日';
+      tooltip.innerHTML = chrome.i18n.getMessage('content_tooltip_non_working');
     }
   } catch (error) {
     console.error("Error updating salary display:", error);

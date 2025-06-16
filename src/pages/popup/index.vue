@@ -8,41 +8,41 @@
             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       </div>
-      <h1 class="text-base font-bold text-gray-800">实时薪资跳动</h1>
+      <h1 class="text-base font-bold text-gray-800">{{ t('header_title') }}</h1>
     </div>
 
     <!-- 主要内容区域 - 减小间距 -->
     <div class="space-y-2">
       <!-- 月薪设置 -->
       <div class="bg-white rounded-md p-1.5 shadow-sm">
-        <label class="block text-xs font-medium text-gray-700 mb-0.5">月薪</label>
+        <label class="block text-xs font-medium text-gray-700 mb-0.5">{{ t('salary_monthly_label') }}</label>
         <div class="relative">
           <span class="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500 text-xs">{{ currencyUnit || '¥' }}</span>
           <input v-model="monthlySalary" type="number" min="0"
             class="w-full pl-6 pr-2 py-1 border border-gray-200 rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent"
-            placeholder="请输入月薪" @input="handleSettingChange">
+            placeholder="{{ t('salary_monthly_placeholder') }}" @input="handleSettingChange">
         </div>
       </div>
 
       <!-- 货币单位设置 -->
       <div class="bg-white rounded-md p-1.5 shadow-sm">
-        <label class="block text-xs font-medium text-gray-700 mb-0.5">货币单位</label>
+        <label class="block text-xs font-medium text-gray-700 mb-0.5">{{ t('salary_currency_label') }}</label>
         <div class="space-y-1">
           <input 
             v-model="currencyUnit" 
             type="text"
             maxlength="6"
             class="w-full text-xs border border-gray-200 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
-            placeholder="¥"
+            placeholder="{{ t('salary_currency_placeholder') }}"
             @input="handleSettingChange"
           >
-          <p class="text-[10px] text-gray-500 italic">可设置为积分、星星等单位，保护隐私</p>
+          <p class="text-[10px] text-gray-500 italic">{{ t('salary_currency_hint') }}</p>
         </div>
       </div>
 
       <!-- 工作时间设置 -->
       <div class="bg-white rounded-md p-1.5 shadow-sm">
-        <label class="block text-xs font-medium text-gray-700 mb-0.5">工作日</label>
+        <label class="block text-xs font-medium text-gray-700 mb-0.5">{{ t('salary_workdays_label') }}</label>
         <div class="flex gap-0.5 flex-wrap">
           <button v-for="day in weekDays" :key="day.value" @click="toggleWorkDay(day.value)" :class="[
             'px-2 py-0.5 rounded text-xs font-medium transition-all duration-200',
@@ -61,7 +61,7 @@
           <div>
             <label class="flex mb-0.5 items-center gap-1 text-xs font-medium text-gray-700">
               <img :src="workerImage" alt="" class="w-4 h-4">
-              <span>上班时间</span>
+              <span>{{ t('salary_workTime_start') }}</span>
             </label>
             <input v-model="workStartTime" type="time"
               ref="startInputRef"
@@ -72,7 +72,7 @@
           <div>
             <label class="flex mb-0.5 items-center gap-1 text-xs font-medium text-gray-700">
               <img :src="workerImage2" alt="" class="w-4 h-4">
-              <span>下班时间</span>
+              <span>{{ t('salary_workTime_end') }}</span>
             </label>
             <input v-model="workEndTime" type="time"
               ref="endInputRef"
@@ -85,7 +85,7 @@
 
       <!-- 更新频率设置 -->
       <div class="bg-white rounded-md p-1.5 shadow-sm">
-        <label class="block text-xs font-medium text-gray-700 mb-0.5">更新频率 (毫秒)</label>
+        <label class="block text-xs font-medium text-gray-700 mb-0.5">{{ t('salary_updateInterval_label') }}</label>
         <div class="flex items-center gap-1">
           <button @click="decreaseInterval"
             class="w-6 h-6 flex items-center justify-center bg-gray-100 rounded hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
@@ -96,7 +96,7 @@
           </button>
           <input v-model="updateInterval" type="number" min="100" max="5000" step="100"
             class="flex-1 px-2 py-1 border border-gray-200 rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent"
-            placeholder="更新间隔" @input="handleSettingChange">
+            placeholder="{{ t('salary_updateInterval_hint') }}" @input="handleSettingChange">
           <button @click="increaseInterval"
             class="w-6 h-6 flex items-center justify-center bg-gray-100 rounded hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             :disabled="updateInterval >= 5000">
@@ -116,13 +116,13 @@
               {{ formatDisplaySalary(currentSalary) }}
             </p>
             <div class="space-y-0.5 text-[10px] text-gray-500">
-              <p>今日已工作: {{ formatWorkTime(currentWorkMinutes) }}</p>
-              <p>每小时: {{ formatDisplaySalary(hourlyRate, true) }}</p>
-              <p>本月工作日: {{ workDaysInMonth }}天</p>
+              <p>{{ t('display_workStatus_worked') }}: {{ formatWorkTime(currentWorkMinutes) }}</p>
+              <p>{{ t('display_workStatus_hourlyRate') }}: {{ formatDisplaySalary(hourlyRate, true) }}</p>
+              <p>{{ t('display_workStatus_workDaysInMonth') }}: {{ workDaysInMonth }} {{ t('display_timeUnit_hour') }}</p>
             </div>
           </template>
           <template v-else>
-            <p class="text-xl font-bold text-gray-400">非工作日</p>
+            <p class="text-xl font-bold text-gray-400">{{ t('display_nonWorkingDay') }}</p>
           </template>
         </div>
       </div>
@@ -154,14 +154,17 @@ const currencyUnit = ref('¥')
 const startInputRef = ref(null)
 const endInputRef = ref(null)
 
+// 创建一个 i18n 辅助函数
+const t = (key) => chrome.i18n.getMessage(key)
+
 const weekDays = [
-  { label: '一', value: 1 },
-  { label: '二', value: 2 },
-  { label: '三', value: 3 },
-  { label: '四', value: 4 },
-  { label: '五', value: 5 },
-  { label: '六', value: 6 },
-  { label: '日', value: 0 }
+  { label: t('salary_workdays_monday'), value: 1 },
+  { label: t('salary_workdays_tuesday'), value: 2 },
+  { label: t('salary_workdays_wednesday'), value: 3 },
+  { label: t('salary_workdays_thursday'), value: 4 },
+  { label: t('salary_workdays_friday'), value: 5 },
+  { label: t('salary_workdays_saturday'), value: 6 },
+  { label: t('salary_workdays_sunday'), value: 0 }
 ]
 
 // 防抖函数
