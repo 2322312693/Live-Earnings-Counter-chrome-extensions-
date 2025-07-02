@@ -112,7 +112,7 @@
     "description": ""
   },
   "content_tooltip_hourly_rate": {
-    "message": "Tarifa horària: $1$2",
+    "message": "Tarifa horària: $1",
     "description": ""
   },
   "content_tooltip_work_days": {

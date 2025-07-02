@@ -112,7 +112,7 @@
     "description": ""
   },
   "content_tooltip_hourly_rate": {
-    "message": "Τιμή ανά ώρα: $1$2",
+    "message": "Τιμή ανά ώρα: $1",
     "description": ""
   },
   "content_tooltip_work_days": {

@@ -112,7 +112,7 @@
     "description": ""
   },
   "content_tooltip_hourly_rate": {
-    "message": "Tarif pe oră: $1$2",
+    "message": "Tarif pe oră: $1",
     "description": ""
   },
   "content_tooltip_work_days": {

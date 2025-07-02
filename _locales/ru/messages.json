@@ -112,7 +112,7 @@
     "description": ""
   },
   "content_tooltip_hourly_rate": {
-    "message": "Часовая ставка: $1$2",
+    "message": "Часовая ставка: $1",
     "description": ""
   },
   "content_tooltip_work_days": {
