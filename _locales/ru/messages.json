@@ -1,10 +1,134 @@
 {
   "extName": {
-    "message": "Счетчик заработка в реальном времени",
+    "message": "Счетчик доходов в реальном времени ",
     "description": ""
   },
   "extDescription": {
-    "message": "Отслеживайте свою зарплату в реальном времени с миллисекундной точностью. Наблюдайте, как ваши доходы растут с каждой секундой вашей работы!",
+    "message": "Отслеживайте свою зарплату в реальном времени с точностью до миллисекунды. Наблюдайте, как ваши доходы растут с каждой секундой вашей работы!",
+    "description": ""
+  },
+  "header_title": {
+    "message": "Отслеживатель зарплаты в реальном времени",
+    "description": ""
+  },
+  "salary_monthly_label": {
+    "message": "Ежемесячная зарплата",
+    "description": ""
+  },
+  "salary_monthly_placeholder": {
+    "message": "Введите ежемесячную зарплату",
+    "description": ""
+  },
+  "salary_currency_label": {
+    "message": "Валюта",
+    "description": ""
+  },
+  "salary_currency_placeholder": {
+    "message": "¥",
+    "description": ""
+  },
+  "salary_currency_hint": {
+    "message": "Можно установить в виде точек, звезд и т.д. для защиты конфиденциальности",
+    "description": ""
+  },
+  "salary_workdays_label": {
+    "message": "Рабочие дни",
+    "description": ""
+  },
+  "salary_workdays_monday": {
+    "message": "Пн",
+    "description": ""
+  },
+  "salary_workdays_tuesday": {
+    "message": "Вт",
+    "description": ""
+  },
+  "salary_workdays_wednesday": {
+    "message": "Ср",
+    "description": ""
+  },
+  "salary_workdays_thursday": {
+    "message": "Чт",
+    "description": ""
+  },
+  "salary_workdays_friday": {
+    "message": "Пт",
+    "description": ""
+  },
+  "salary_workdays_saturday": {
+    "message": "Сб",
+    "description": ""
+  },
+  "salary_workdays_sunday": {
+    "message": "Солнце",
+    "description": ""
+  },
+  "salary_workTime_start": {
+    "message": "Время начала работы",
+    "description": ""
+  },
+  "salary_workTime_end": {
+    "message": "Время окончания работы",
+    "description": ""
+  },
+  "salary_updateInterval_label": {
+    "message": "Интервал обновления (мс)",
+    "description": ""
+  },
+  "salary_updateInterval_hint": {
+    "message": "Диапазон: 100-5000мс, Шаг: 100мс",
+    "description": ""
+  },
+  "display_nonWorkingDay": {
+    "message": "Не рабочий день",
+    "description": ""
+  },
+  "display_workStatus_worked": {
+    "message": "Сегодня работал",
+    "description": ""
+  },
+  "display_workStatus_hourlyRate": {
+    "message": "В час",
+    "description": ""
+  },
+  "display_workStatus_workDaysInMonth": {
+    "message": "Рабочие дни в этом месяце",
+    "description": ""
+  },
+  "display_timeUnit_hour": {
+    "message": "час",
+    "description": ""
+  },
+  "display_timeUnit_minute": {
+    "message": "минута",
+    "description": ""
+  },
+  "content_salary_rest": {
+    "message": "Отдых",
+    "description": ""
+  },
+  "content_tooltip_worked": {
+    "message": "Работал: 1$",
+    "description": ""
+  },
+  "content_tooltip_hourly_rate": {
+    "message": "Часовая ставка: $1$2",
+    "description": ""
+  },
+  "content_tooltip_work_days": {
+    "message": "Рабочие дни в этом месяце: 1 доллар",
+    "description": ""
+  },
+  "content_tooltip_non_working": {
+    "message": "Нерабочий день",
+    "description": ""
+  },
+  "content_progress_full": {
+    "message": "▮",
+    "description": ""
+  },
+  "content_progress_empty": {
+    "message": "▯",
     "description": ""
   }
 }

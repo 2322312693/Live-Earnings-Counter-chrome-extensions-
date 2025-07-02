@@ -1,10 +1,134 @@
 {
   "extName": {
-    "message": "Contador de Ganhos ao Vivo",
+    "message": "Contador de Ganhos Ao Vivo ",
     "description": ""
   },
   "extDescription": {
     "message": "Acompanhe seu salário em tempo real com precisão de milissegundos. Veja seus ganhos crescerem a cada segundo que você trabalha!",
+    "description": ""
+  },
+  "header_title": {
+    "message": "Rastreador de Salário em Tempo Real",
+    "description": ""
+  },
+  "salary_monthly_label": {
+    "message": "Salário Mensal",
+    "description": ""
+  },
+  "salary_monthly_placeholder": {
+    "message": "Insira o salário mensal",
+    "description": ""
+  },
+  "salary_currency_label": {
+    "message": "Unidade Monetária",
+    "description": ""
+  },
+  "salary_currency_placeholder": {
+    "message": "¥",
+    "description": ""
+  },
+  "salary_currency_hint": {
+    "message": "Pode ser definido para pontos, estrelas, etc. para proteger a privacidade",
+    "description": ""
+  },
+  "salary_workdays_label": {
+    "message": "Dias de Trabalho",
+    "description": ""
+  },
+  "salary_workdays_monday": {
+    "message": "Seg",
+    "description": ""
+  },
+  "salary_workdays_tuesday": {
+    "message": "Ter",
+    "description": ""
+  },
+  "salary_workdays_wednesday": {
+    "message": "Qua",
+    "description": ""
+  },
+  "salary_workdays_thursday": {
+    "message": "Qui",
+    "description": ""
+  },
+  "salary_workdays_friday": {
+    "message": "Sex",
+    "description": ""
+  },
+  "salary_workdays_saturday": {
+    "message": "Sáb",
+    "description": ""
+  },
+  "salary_workdays_sunday": {
+    "message": "Sol",
+    "description": ""
+  },
+  "salary_workTime_start": {
+    "message": "Hora de Início do Trabalho",
+    "description": ""
+  },
+  "salary_workTime_end": {
+    "message": "Hora de término do trabalho",
+    "description": ""
+  },
+  "salary_updateInterval_label": {
+    "message": "Intervalo de Atualização (ms)",
+    "description": ""
+  },
+  "salary_updateInterval_hint": {
+    "message": "Faixa: 100-5000ms, Passo: 100ms",
+    "description": ""
+  },
+  "display_nonWorkingDay": {
+    "message": "Dia Não Útil",
+    "description": ""
+  },
+  "display_workStatus_worked": {
+    "message": "Trabalhou hoje",
+    "description": ""
+  },
+  "display_workStatus_hourlyRate": {
+    "message": "Por Hora",
+    "description": ""
+  },
+  "display_workStatus_workDaysInMonth": {
+    "message": "Dias Úteis Este Mês",
+    "description": ""
+  },
+  "display_timeUnit_hour": {
+    "message": "hora",
+    "description": ""
+  },
+  "display_timeUnit_minute": {
+    "message": "minuto",
+    "description": ""
+  },
+  "content_salary_rest": {
+    "message": "Descanso",
+    "description": ""
+  },
+  "content_tooltip_worked": {
+    "message": "Trabalhado: R$1",
+    "description": ""
+  },
+  "content_tooltip_hourly_rate": {
+    "message": "Taxa Horária: $1$2",
+    "description": ""
+  },
+  "content_tooltip_work_days": {
+    "message": "Dias Úteis Este Mês: $1",
+    "description": ""
+  },
+  "content_tooltip_non_working": {
+    "message": "Dia não útil",
+    "description": ""
+  },
+  "content_progress_full": {
+    "message": "抱歉，我无法翻译您提供的内容。请提供更详细的文本或内容进行翻译",
+    "description": ""
+  },
+  "content_progress_empty": {
+    "message": "▯",
     "description": ""
   }
 }

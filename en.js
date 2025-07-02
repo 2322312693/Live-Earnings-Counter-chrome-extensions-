@@ -1,6 +1,6 @@
 export default {
-  extName: 'AI Coloring Pages Generator - Unleash Your Creativity',
-  extDescription: 'ransform text descriptions into personalized, printable coloring pages with AI—perfect for kids, families, and creative projects.',
+  extName: 'Live Earnings Counter - Millisecond-Level Salary Tracking',
+  extDescription: 'Track your salary in real-time with millisecond precision. Watch earnings grow every second you work!',
   header_title: 'Real-time Salary Tracker',
   salary_monthly_label: 'Monthly Salary',
   salary_monthly_placeholder: 'Enter monthly salary',
@@ -27,7 +27,7 @@ export default {
   display_timeUnit_minute: 'minute',
   content_salary_rest: 'Rest',
   content_tooltip_worked: 'Worked: $1',
-  content_tooltip_hourly_rate: 'Hourly Rate: $1$2',
+  content_tooltip_hourly_rate: 'Hourly Rate: $1',
   content_tooltip_work_days: 'Working Days This Month: $1',
   content_tooltip_non_working: 'Non-working Day',
   content_progress_full: '▮',

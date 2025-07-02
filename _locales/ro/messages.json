@@ -1,10 +1,134 @@
 {
   "extName": {
-    "message": "Contor de Venituri în Timp Real",
+    "message": "Contor de Venituri În Timp Real ",
     "description": ""
   },
   "extDescription": {
-    "message": "Urmăriți-vă salariul în timp real cu o precizie de milisecunde. Observați cum câștigurile cresc în fiecare secundă în care lucrați!",
+    "message": "Urmăriți-vă salariul în timp real cu precizie de milisecunde. Observați cum câștigurile cresc în fiecare secundă în care lucrați!",
+    "description": ""
+  },
+  "header_title": {
+    "message": "Tracker de salarii în timp real",
+    "description": ""
+  },
+  "salary_monthly_label": {
+    "message": "Salariu lunar",
+    "description": ""
+  },
+  "salary_monthly_placeholder": {
+    "message": "Introduceți salariul lunar",
+    "description": ""
+  },
+  "salary_currency_label": {
+    "message": "Unitate monetară",
+    "description": ""
+  },
+  "salary_currency_placeholder": {
+    "message": "¥",
+    "description": ""
+  },
+  "salary_currency_hint": {
+    "message": "Poate fi setat pe puncte, stele etc. pentru a proteja intimitatea",
+    "description": ""
+  },
+  "salary_workdays_label": {
+    "message": "Zile de lucru",
+    "description": ""
+  },
+  "salary_workdays_monday": {
+    "message": "Luni",
+    "description": ""
+  },
+  "salary_workdays_tuesday": {
+    "message": "Mar",
+    "description": ""
+  },
+  "salary_workdays_wednesday": {
+    "message": "Mie",
+    "description": ""
+  },
+  "salary_workdays_thursday": {
+    "message": "Joi",
+    "description": ""
+  },
+  "salary_workdays_friday": {
+    "message": "Vin",
+    "description": ""
+  },
+  "salary_workdays_saturday": {
+    "message": "Sâm",
+    "description": ""
+  },
+  "salary_workdays_sunday": {
+    "message": "Soare",
+    "description": ""
+  },
+  "salary_workTime_start": {
+    "message": "Ora de început a muncii",
+    "description": ""
+  },
+  "salary_workTime_end": {
+    "message": "Ora de încheiere a muncii",
+    "description": ""
+  },
+  "salary_updateInterval_label": {
+    "message": "Interval de actualizare (ms)",
+    "description": ""
+  },
+  "salary_updateInterval_hint": {
+    "message": "Range: 100-5000ms, Step: 100ms",
+    "description": ""
+  },
+  "display_nonWorkingDay": {
+    "message": "Zi nelucrătoare",
+    "description": ""
+  },
+  "display_workStatus_worked": {
+    "message": "Astăzi am lucrat",
+    "description": ""
+  },
+  "display_workStatus_hourlyRate": {
+    "message": "Pe oră",
+    "description": ""
+  },
+  "display_workStatus_workDaysInMonth": {
+    "message": "Zile lucrătoare în această lună",
+    "description": ""
+  },
+  "display_timeUnit_hour": {
+    "message": "oră",
+    "description": ""
+  },
+  "display_timeUnit_minute": {
+    "message": "minut",
+    "description": ""
+  },
+  "content_salary_rest": {
+    "message": "Odihnă",
+    "description": ""
+  },
+  "content_tooltip_worked": {
+    "message": "Lucrat: 1 $",
+    "description": ""
+  },
+  "content_tooltip_hourly_rate": {
+    "message": "Tarif pe oră: $1$2",
+    "description": ""
+  },
+  "content_tooltip_work_days": {
+    "message": "Zile lucrătoare în această lună: $1",
+    "description": ""
+  },
+  "content_tooltip_non_working": {
+    "message": "Zi nelucrătoare",
+    "description": ""
+  },
+  "content_progress_full": {
+    "message": "▮",
+    "description": ""
+  },
+  "content_progress_empty": {
+    "message": "▯",
     "description": ""
   }
 }

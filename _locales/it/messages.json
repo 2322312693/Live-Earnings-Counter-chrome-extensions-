@@ -1,10 +1,134 @@
 {
   "extName": {
-    "message": "Contatore delle Entrate in Tempo Reale",
+    "message": "Contatore di Guadagni in Tempo Reale ",
     "description": ""
   },
   "extDescription": {
     "message": "Tieni traccia del tuo stipendio in tempo reale con precisione al millisecondo. Guarda i guadagni crescere ogni secondo che lavori!",
+    "description": ""
+  },
+  "header_title": {
+    "message": "Tracker Salariale in Tempo Reale",
+    "description": ""
+  },
+  "salary_monthly_label": {
+    "message": "Stipendio mensile",
+    "description": ""
+  },
+  "salary_monthly_placeholder": {
+    "message": "Inserisci lo stipendio mensile",
+    "description": ""
+  },
+  "salary_currency_label": {
+    "message": "Unità di valuta",
+    "description": ""
+  },
+  "salary_currency_placeholder": {
+    "message": "¥",
+    "description": ""
+  },
+  "salary_currency_hint": {
+    "message": "Può essere impostato su punti, stelle, ecc. per proteggere la privacy",
+    "description": ""
+  },
+  "salary_workdays_label": {
+    "message": "Giorni lavorativi",
+    "description": ""
+  },
+  "salary_workdays_monday": {
+    "message": "Lun",
+    "description": ""
+  },
+  "salary_workdays_tuesday": {
+    "message": "Martedì",
+    "description": ""
+  },
+  "salary_workdays_wednesday": {
+    "message": "Mer",
+    "description": ""
+  },
+  "salary_workdays_thursday": {
+    "message": "Gio",
+    "description": ""
+  },
+  "salary_workdays_friday": {
+    "message": "Venerdì",
+    "description": ""
+  },
+  "salary_workdays_saturday": {
+    "message": "Sab",
+    "description": ""
+  },
+  "salary_workdays_sunday": {
+    "message": "Sole",
+    "description": ""
+  },
+  "salary_workTime_start": {
+    "message": "Ora di inizio lavoro",
+    "description": ""
+  },
+  "salary_workTime_end": {
+    "message": "Ora di fine lavoro",
+    "description": ""
+  },
+  "salary_updateInterval_label": {
+    "message": "Intervallo di aggiornamento (ms)",
+    "description": ""
+  },
+  "salary_updateInterval_hint": {
+    "message": "Intervallo: 100-5000 ms, Passo: 100 ms",
+    "description": ""
+  },
+  "display_nonWorkingDay": {
+    "message": "Giorno non lavorativo",
+    "description": ""
+  },
+  "display_workStatus_worked": {
+    "message": "Oggi ho lavorato",
+    "description": ""
+  },
+  "display_workStatus_hourlyRate": {
+    "message": "Per Ora",
+    "description": ""
+  },
+  "display_workStatus_workDaysInMonth": {
+    "message": "Giorni lavorativi di questo mese",
+    "description": ""
+  },
+  "display_timeUnit_hour": {
+    "message": "ora",
+    "description": ""
+  },
+  "display_timeUnit_minute": {
+    "message": "minuto",
+    "description": ""
+  },
+  "content_salary_rest": {
+    "message": "Riposo",
+    "description": ""
+  },
+  "content_tooltip_worked": {
+    "message": "Lavorato: $1",
+    "description": ""
+  },
+  "content_tooltip_hourly_rate": {
+    "message": "Tariffa oraria: $1$2",
+    "description": ""
+  },
+  "content_tooltip_work_days": {
+    "message": "Giorni Lavorativi Questo Mese: $1",
+    "description": ""
+  },
+  "content_tooltip_non_working": {
+    "message": "Giorno non lavorativo",
+    "description": ""
+  },
+  "content_progress_full": {
+    "message": "▮",
+    "description": ""
+  },
+  "content_progress_empty": {
+    "message": "        ▯",
     "description": ""
   }
 }

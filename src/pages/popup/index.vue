@@ -16,10 +16,10 @@
       <!-- 月薪设置 -->
       <div class="bg-white rounded-md p-1.5 shadow-sm">
         <label class="block text-xs font-medium text-gray-700 mb-0.5">{{ t('salary_monthly_label') }}</label>
-        <div class="relative">
-          <span class="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500 text-xs">{{ currencyUnit || '¥' }}</span>
+        <div class="relative flex items-center space-x-1">
+          <span class=" text-gray-500 text-xs text-nowrap">{{ currencyUnit || '¥' }}</span>
           <input v-model="monthlySalary" type="number" min="0"
-            class="w-full pl-6 pr-2 py-1 border border-gray-200 rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent"
+            class="w-full  pr-2 py-1 border border-gray-200 rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent"
             placeholder="{{ t('salary_monthly_placeholder') }}" @input="handleSettingChange">
         </div>
       </div>
@@ -118,7 +118,7 @@
             <div class="space-y-0.5 text-[10px] text-gray-500">
               <p>{{ t('display_workStatus_worked') }}: {{ formatWorkTime(currentWorkMinutes) }}</p>
               <p>{{ t('display_workStatus_hourlyRate') }}: {{ formatDisplaySalary(hourlyRate, true) }}</p>
-              <p>{{ t('display_workStatus_workDaysInMonth') }}: {{ workDaysInMonth }} {{ t('display_timeUnit_hour') }}</p>
+              <p>{{ t('display_workStatus_workDaysInMonth') }}: {{ workDaysInMonth }}</p>
             </div>
           </template>
           <template v-else>

@@ -1,10 +1,134 @@
 {
   "extName": {
-    "message": "Counter ya Mapato ya Moja kwa Moja",
+    "message": "Counter ya Mapato Ya Moja Kwa Moja ",
     "description": ""
   },
   "extDescription": {
-    "message": "Fuatilia mshahara wako kwa wakati halisi na usahihi wa milisekunde. Tazama mapato yakikua kila sekunde unayotenda kazi!",
+    "message": "Fuatilia mshahara wako kwa wakati halisi na usahihi wa milisekunde. Tazama mapato yanavyokua kila sekunde unayofanya kazi!",
+    "description": ""
+  },
+  "header_title": {
+    "message": "Tracker ya Mishahara kwa Wakati Halisi",
+    "description": ""
+  },
+  "salary_monthly_label": {
+    "message": "Mshahara wa Kila Mwezi",
+    "description": ""
+  },
+  "salary_monthly_placeholder": {
+    "message": "Anza mshahara wa kila mwezi",
+    "description": ""
+  },
+  "salary_currency_label": {
+    "message": "Sarafu ya Msingi",
+    "description": ""
+  },
+  "salary_currency_placeholder": {
+    "message": "¥",
+    "description": ""
+  },
+  "salary_currency_hint": {
+    "message": "Inapatikana kuwekwa kwa alama, nyota, n.k. ili kulinda faragha",
+    "description": ""
+  },
+  "salary_workdays_label": {
+    "message": "Siku za Kazi",
+    "description": ""
+  },
+  "salary_workdays_monday": {
+    "message": "Sw: Mwezi",
+    "description": ""
+  },
+  "salary_workdays_tuesday": {
+    "message": "Tues",
+    "description": ""
+  },
+  "salary_workdays_wednesday": {
+    "message": "Ons",
+    "description": ""
+  },
+  "salary_workdays_thursday": {
+    "message": "Tatu",
+    "description": ""
+  },
+  "salary_workdays_friday": {
+    "message": "Ijumaa",
+    "description": ""
+  },
+  "salary_workdays_saturday": {
+    "message": "Lau",
+    "description": ""
+  },
+  "salary_workdays_sunday": {
+    "message": "Jua",
+    "description": ""
+  },
+  "salary_workTime_start": {
+    "message": "Muda wa Kuanza Kazi",
+    "description": ""
+  },
+  "salary_workTime_end": {
+    "message": "Kumaliza Wakati",
+    "description": ""
+  },
+  "salary_updateInterval_label": {
+    "message": "Sasisho la muda (ms)",
+    "description": ""
+  },
+  "salary_updateInterval_hint": {
+    "message": "Upeo: 100-5000ms, Hatua: 100ms",
+    "description": ""
+  },
+  "display_nonWorkingDay": {
+    "message": "Siku isiyo na kazi",
+    "description": ""
+  },
+  "display_workStatus_worked": {
+    "message": "Kazi leo",
+    "description": ""
+  },
+  "display_workStatus_hourlyRate": {
+    "message": "Per Saa",
+    "description": ""
+  },
+  "display_workStatus_workDaysInMonth": {
+    "message": "Siku za Kazi Mwezi Huu",
+    "description": ""
+  },
+  "display_timeUnit_hour": {
+    "message": "saa",
+    "description": ""
+  },
+  "display_timeUnit_minute": {
+    "message": "dakika",
+    "description": ""
+  },
+  "content_salary_rest": {
+    "message": "Pumzika",
+    "description": ""
+  },
+  "content_tooltip_worked": {
+    "message": "Ty工作: $1",
+    "description": ""
+  },
+  "content_tooltip_hourly_rate": {
+    "message": "Mzuri kwa Saa: $1$2",
+    "description": ""
+  },
+  "content_tooltip_work_days": {
+    "message": "Working Days This Month: $1",
+    "description": ""
+  },
+  "content_tooltip_non_working": {
+    "message": "Siku isiyofanya kazi",
+    "description": ""
+  },
+  "content_progress_full": {
+    "message": "▮",
+    "description": ""
+  },
+  "content_progress_empty": {
+    "message": "▯",
     "description": ""
   }
 }

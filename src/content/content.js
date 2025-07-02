@@ -145,6 +145,7 @@ function updateSalaryDisplay(data) {
       let tooltipContent = chrome.i18n.getMessage('content_tooltip_worked', [data.currentWorkMinutes]) + '<br>';
       
       if (!data.hideActualAmount) {
+        // Variable $1$ used but not defined.
         tooltipContent += chrome.i18n.getMessage('content_tooltip_hourly_rate', [
           data.currencyUnit || '¥',
           data.hourlyRate.toFixed(2)

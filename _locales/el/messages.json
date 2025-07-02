@@ -1,10 +1,134 @@
 {
   "extName": {
-    "message": "Μηχανισμός Ζωντανών Εσόδων",
+    "message": "Ζωντανός Μετρητής Εισοδημάτων ",
     "description": ""
   },
   "extDescription": {
-    "message": "Παρακολουθήστε τον μισθό σας σε πραγματικό χρόνο με ακρίβεια χιλιοστού του δευτερολέπτου. Παρακολουθήστε τα κέρδη να αυξάνονται κάθε δεύτερο που εργάζεστε!",
+    "message": "Παρακολουθήστε τον μισθό σας σε πραγματικό χρόνο με ακρίβεια χιλιοστού του δευτερολέπτου. Παρακολουθήστε τις αποδοχές σας να αυξάνονται κάθε δευτερόλεπτο που εργάζεστε!",
+    "description": ""
+  },
+  "header_title": {
+    "message": "Εργαλείο παρακολούθησης μισθών σε πραγματικό χρόνο",
+    "description": ""
+  },
+  "salary_monthly_label": {
+    "message": "Μηνιαίος Μισθός",
+    "description": ""
+  },
+  "salary_monthly_placeholder": {
+    "message": "Εισάγετε τον μηνιαίο μισθό",
+    "description": ""
+  },
+  "salary_currency_label": {
+    "message": "Νόμισμα",
+    "description": ""
+  },
+  "salary_currency_placeholder": {
+    "message": "¥",
+    "description": ""
+  },
+  "salary_currency_hint": {
+    "message": "Μπορεί να ρυθμιστεί σε βαθμούς, αστέρια κ.λπ. για να προστατεύσει την ιδιωτικότητα",
+    "description": ""
+  },
+  "salary_workdays_label": {
+    "message": "Ημέρες Εργασίας",
+    "description": ""
+  },
+  "salary_workdays_monday": {
+    "message": "Δευ",
+    "description": ""
+  },
+  "salary_workdays_tuesday": {
+    "message": "Τρίτη",
+    "description": ""
+  },
+  "salary_workdays_wednesday": {
+    "message": "Τετ",
+    "description": ""
+  },
+  "salary_workdays_thursday": {
+    "message": "Πέμ",
+    "description": ""
+  },
+  "salary_workdays_friday": {
+    "message": "Παρασκευή",
+    "description": ""
+  },
+  "salary_workdays_saturday": {
+    "message": "Σαβ",
+    "description": ""
+  },
+  "salary_workdays_sunday": {
+    "message": "Ήλιος",
+    "description": ""
+  },
+  "salary_workTime_start": {
+    "message": "Ώρα Έναρξης Εργασίας",
+    "description": ""
+  },
+  "salary_workTime_end": {
+    "message": "Ώρα λήξης εργασίας",
+    "description": ""
+  },
+  "salary_updateInterval_label": {
+    "message": "Διάστημα ενημέρωσης (ms)",
+    "description": ""
+  },
+  "salary_updateInterval_hint": {
+    "message": "Εύρος: 100-5000ms, Βήμα: 100ms",
+    "description": ""
+  },
+  "display_nonWorkingDay": {
+    "message": "Μη εργάσιμη ημέρα",
+    "description": ""
+  },
+  "display_workStatus_worked": {
+    "message": "Δούλεψα Σήμερα",
+    "description": ""
+  },
+  "display_workStatus_hourlyRate": {
+    "message": "Ανά Ώρα",
+    "description": ""
+  },
+  "display_workStatus_workDaysInMonth": {
+    "message": "Εργάσιμες ημέρες αυτόν τον μήνα",
+    "description": ""
+  },
+  "display_timeUnit_hour": {
+    "message": "ώρα",
+    "description": ""
+  },
+  "display_timeUnit_minute": {
+    "message": "λεπτό",
+    "description": ""
+  },
+  "content_salary_rest": {
+    "message": "Ρεστ",
+    "description": ""
+  },
+  "content_tooltip_worked": {
+    "message": "Δουλέψαμε: 1 $",
+    "description": ""
+  },
+  "content_tooltip_hourly_rate": {
+    "message": "Τιμή ανά ώρα: $1$2",
+    "description": ""
+  },
+  "content_tooltip_work_days": {
+    "message": "Εργάσιμες Ημέρες Αυτόν τον Μήνα: $1",
+    "description": ""
+  },
+  "content_tooltip_non_working": {
+    "message": "Μη εργάσιμη ημέρα",
+    "description": ""
+  },
+  "content_progress_full": {
+    "message": "▮",
+    "description": ""
+  },
+  "content_progress_empty": {
+    "message": "▯",
     "description": ""
   }
 }
